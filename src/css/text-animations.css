@@ -1,0 +1,30 @@
+.typing-name {
+  width: 5ch;
+  animation: typing 7s steps(5) infinite, blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  14.29% {
+    /* approximately 1s / 7s */
+    width: 5ch;
+  }
+  85.71% {
+    /* approximately 6s / 7s */
+    width: 5ch;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
