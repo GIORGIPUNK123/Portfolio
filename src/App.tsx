@@ -1,12 +1,18 @@
 import './css/main.css';
 import { Header } from './components/Header';
-import { HackingPart } from './components/HackingPart';
+// import { TerminalPart } from './components/terminal/TerminalPart';
+import { Routes, Route } from 'react-router-dom';
+import { Home } from './components/Home';
+import { About } from './components/About';
 export const App = () => {
   return (
     <>
       <Header />
-      <HackingPart />
-      <div className=' bg-blue-500 z-1 w-full absolute h-[1000px]'></div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        {/* <Route path='*' element={<NotFound />} /> */}
+      </Routes>
     </>
   );
 };
