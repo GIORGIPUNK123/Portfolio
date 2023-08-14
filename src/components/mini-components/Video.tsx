@@ -7,6 +7,6 @@ export const Video = () => (
     loop
     id='bgVideo'
   >
-    <source src='../../videos/bg_video.mp4' />
+    <source src='/videos/bg_video.mp4' />
   </video>
 );

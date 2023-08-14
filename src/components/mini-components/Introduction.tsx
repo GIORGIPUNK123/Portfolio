@@ -1,7 +1,7 @@
-import { hackerAscri } from '../../hackerAscri';
+// import { hackerAscri } from '../../hackerAscri';
 
 export const Introduction = () => {
-  const ascri = hackerAscri();
+  // const ascri = hackerAscri();
   return (
     <>
       <div className='flex flex-col items-center w-full'>

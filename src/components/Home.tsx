@@ -1,4 +1,4 @@
-import { Video } from './Video';
+import { Video } from './mini-components/Video';
 import { Introduction } from './mini-components/Introduction';
 import { Terminal } from './terminal/Terminal';
 export const Home = () => {

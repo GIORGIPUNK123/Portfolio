@@ -48,7 +48,6 @@ export const Terminal = () => {
     });
   };
   const [usedCommands, setUsedCommands] = useState<string[]>([]);
-  console.log('usedCommands: ', usedCommands);
   const handleSubmit = () => {
     let navError: string | null = null;
 
