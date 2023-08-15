@@ -1,11 +1,10 @@
-import { useState } from 'react';
 import { skullAscri } from '../../ascii/Ascii';
 import { introductionTxt, skillsTxt } from '../../texts';
 const words =
   `${introductionTxt} ${skillsTxt}`.match(/[\w/'-]+|[.,!?;:]/g) || [];
 export const Introduction = (props: { terminalHidden: boolean }) => {
   const { terminalHidden } = props;
-  const [text, setText] = useState<string[]>(words);
+  // const [text, setText] = useState<string[]>(words);
   // useEffect(() => {
   //   let wordIndex = 0;
   //   const updateText = () => {
@@ -33,7 +32,7 @@ export const Introduction = (props: { terminalHidden: boolean }) => {
           </div>
           <div className='box-border self-start ml-4 w-16 h-full bg-black' />
           <div className='text-[#6dff41] font-mono text-2xl ml-4'>
-            {text.map((word, idx) => {
+            {words.map((word, idx) => {
               const isPunctuation = [',', '.', '!', '?', ';', ':'].includes(
                 word
               );
