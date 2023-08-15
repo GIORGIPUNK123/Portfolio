@@ -40,11 +40,11 @@ export const TerminalInput = (props: {
 
   return (
     <div className='flex items-center w-full bg-transparent z-1'>
-      <div className='text-[#6dff41] text-2xl font-mono pr-3'>
+      <div className='text-[#6dff41] text-4xl font-mono pr-3'>
         {firstOutput}
       </div>
       <input
-        className='pr-4 placeholder-[#6dff41] flex-grow bg-transparent outline-none border-none text-[#6dff41] text-2xl font-mono'
+        className='pr-4 placeholder-[#6dff41] flex-grow bg-transparent outline-none border-none text-[#6dff41] text-4xl font-mono'
         value={userInput}
         type='text'
         disabled={isDisabled}

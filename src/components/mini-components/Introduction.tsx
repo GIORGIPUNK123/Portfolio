@@ -1,38 +1,23 @@
-import { useEffect, useState } from 'react';
-import { Loading } from './Loadig';
+import { useState } from 'react';
 import { skullAscri } from '../../ascii/Ascii';
-const initialText = `Hello! I'm Giorgi Charashvili from Georgia. Bridging the worlds of web development and 3D design, I'm a passionate Full-Stack Developer and 3D Artist. My toolkit includes JavaScript, TypeScript, React, Vue, Node.js, Electron, and Git. I'm adept at database management with MySql and crafting responsive designs with HTML and CSS.
-/n
-In the realm of 3D art, Blender and Adobe Photoshop are my go-to tools for creating compelling visuals. I pride myself on my ability to combine technical proficiency with artistic flair.
-/n
-The ever-evolving landscape of IT drives my thirst for knowledge. I’m confident in my foundation but always eager to embrace new techniques and challenges. I believe in collaboration, continuous learning, and pushing boundaries. Whether it's a new project or an opportunity to learn, I'm always ready to dive in.
-`;
-const skills = `/n Skills: JavaScript, Typescript, Problem Solving, React, Vue, Node.js, Electron, Git, MySql, HTML/CSS, Blender, Adobe Photoshop ...`;
-const words = `${initialText} ${skills}`.match(/[\w/'-]+|[.,!?;]/g) || [];
+import { introductionTxt, skillsTxt } from '../../texts';
+const words =
+  `${introductionTxt} ${skillsTxt}`.match(/[\w/'-]+|[.,!?;:]/g) || [];
 export const Introduction = (props: { terminalHidden: boolean }) => {
   const { terminalHidden } = props;
-  const [text, setText] = useState<string[]>([]);
-  const endLoading = words.length;
-  useEffect(() => {
-    let wordIndex = 0;
-    const interval = setInterval(() => {
-      setText((prevState) => [...prevState, words[wordIndex]]);
-      wordIndex++;
+  const [text, setText] = useState<string[]>(words);
+  // useEffect(() => {
+  //   let wordIndex = 0;
+  //   const updateText = () => {
+  //     if (wordIndex < words.length) {
+  //       setText((prevState) => [...prevState, words[wordIndex]]);
+  //       wordIndex++;
+  //       requestAnimationFrame(updateText);
+  //     }
+  //   };
 
-      // If all words have been added, clear the interval
-      if (wordIndex === words.length) {
-        clearInterval(interval);
-      }
-    }, 20); // Adjust this value for speed
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const ascri = skullAscri();
-  // return text.length !== endLoading ? (
-  // <Loading curr={text.length} end={endLoading} />
-  // ) :
-
+  //   updateText();
+  // }, []);
   return (
     <div
       className={`${
@@ -44,12 +29,14 @@ export const Introduction = (props: { terminalHidden: boolean }) => {
         <div className='flex h-[800px] p-4 overflow-y-auto'>
           {/* Add overflow-y-auto here */}
           <div className='text-[#6dff41] font-mono text-2xl whitespace-pre'>
-            {ascri}
+            {skullAscri}
           </div>
           <div className='box-border self-start ml-4 w-16 h-full bg-black' />
           <div className='text-[#6dff41] font-mono text-2xl ml-4'>
             {text.map((word, idx) => {
-              const isPunctuation = [',', '.', '!', '?', ';'].includes(word);
+              const isPunctuation = [',', '.', '!', '?', ';', ':'].includes(
+                word
+              );
               return (
                 <span key={idx}>
                   {word === '/n' ? (
