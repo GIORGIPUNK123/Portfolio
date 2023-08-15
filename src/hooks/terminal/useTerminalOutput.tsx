@@ -1,4 +1,4 @@
-import { tree } from '../tree';
+import { tree } from '../../tree';
 
 export const useTerminalOutput = () => {
   const terminalOutput = (command: string) => {

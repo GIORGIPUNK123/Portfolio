@@ -3,7 +3,6 @@ import { useNavigate, useLocation } from 'react-router-dom';
 export const useNavigationCommand = () => {
   const navigate = useNavigate();
   const pathname = useLocation().pathname;
-
   const navigateCommand = (command: string): string | null => {
     const place = command.slice(8).trim();
 
@@ -33,5 +32,5 @@ export const useNavigationCommand = () => {
     return 'Invalid Path';
   };
 
-  return { navigateCommand };
+  return navigateCommand;
 };
