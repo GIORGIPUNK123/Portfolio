@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { TerminalInput } from './TerminalInput';
 import { TerminalBtn } from './TerminalBtn';
 import { useHandleSubmit } from '../../hooks/terminal/useHandleSubmit';
