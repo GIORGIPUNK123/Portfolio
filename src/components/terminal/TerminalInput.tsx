@@ -12,7 +12,8 @@ export const TerminalInput = (props: {
     props;
   const [currIndex, setCurrIndex] = useState(usedCommands.length);
   const pathname = useLocation().pathname;
-  const firstOutput = `───╼[👾]/home/chara/Desktop/Github-Projects/Portfolio${pathname} $ `;
+  const startst = '───╼[👾]';
+  const firstOutput = `${startst}/home/chara/Desktop/Github-Projects/Portfolio${pathname} $ `;
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter') {
       handleSubmit();
@@ -39,12 +40,15 @@ export const TerminalInput = (props: {
   };
 
   return (
-    <div className='flex items-center w-full bg-transparent z-1'>
-      <div className='text-[#6dff41] text-4xl font-mono pr-3'>
-        {firstOutput}
+    <div className='flex items-center w-full bg-transparent z-1 pb-2'>
+      <div className='text-[#6dff41] text-xl 2xl:text-3xl font-mono pr-3'>
+        <span className='hidden 2xl:block'>{firstOutput}</span>
+        <span className='2xl:hidden'>
+          {startst}/Portfolio{pathname} $
+        </span>
       </div>
       <input
-        className='pr-4 placeholder-[#6dff41] flex-grow bg-transparent outline-none border-none text-[#6dff41] text-4xl font-mono'
+        className='pr-4 placeholder-[#6dff41] flex-grow bg-transparent outline-none border-none text-[#6dff41] text-2xl 2xl:text-3xl font-mono'
         value={userInput}
         type='text'
         disabled={isDisabled}

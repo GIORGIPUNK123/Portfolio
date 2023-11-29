@@ -23,11 +23,13 @@ export const useTerminalOutput = () => {
       case 'skills':
         return 'JavaScript, Typescript, Problem Solving, React, Vue, Node.js, Electron, Git, MySql, HTML/CSS, Blender, Adobe Photoshop, Cinema4D ...';
       case 'projects':
-        return `1. Write
-  2. Chara Chat ...`;
+        return `
+https://github.com/GIORGIPUNK123/Write|1. Write
+https://github.com/GIORGIPUNK123/Simple-Encoder|2. Simple Encoder
+https://github.com/GIORGIPUNK123/Calculator-App|3. Calculator`;
       case 'contact':
-        return `mailto: giorgirock@hotmail.com|Email  
-  https://github.com/GIORGIPUNK123/|Github 
+        return `mailto: giorgirock@hotmail.com|Email
+  https://github.com/GIORGIPUNK123/|Github
   https://www.linkedin.com/in/giorgi-charashvili-877a79229/|LinkedIn`;
       case 'help':
         return 'Available Commands: about, skills, projects, contact, tree, help';

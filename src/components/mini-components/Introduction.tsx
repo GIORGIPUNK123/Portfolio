@@ -23,15 +23,14 @@ export const Introduction = (props: { terminalHidden: boolean }) => {
         terminalHidden ? 'flex' : 'hidden'
       } relative top-28 flex-col items-center w-full z-1`}
     >
-      <div className='mx-auto w-11/12 h-[800px] bg-black opacity-95 -z-1 box-border' />
-      <div className='flex absolute top-0 flex-col mx-auto w-11/12 align-start'>
-        <div className='flex h-[800px] p-4 overflow-y-auto'>
+      <div className='flex absolute top-4 flex-col mx-auto w-11/12 align-start'>
+        <div className='flex bg-[#000000ed]  p-4 overflow-y-auto'>
           {/* Add overflow-y-auto here */}
-          <div className='text-[#6dff41] font-mono text-2xl whitespace-pre'>
+          <div className='text-[#6dff41] hidden  xl:block font-mono text-2xl whitespace-pre'>
             {skullAscri}
           </div>
           <div className='box-border self-start ml-4 w-16 h-full bg-black' />
-          <div className='text-[#6dff41] font-mono text-2xl ml-4'>
+          <div className='text-[#6dff41] font-mono text-sm md:text-xl 2xl:text-2xl ml-4'>
             {words.map((word, idx) => {
               const isPunctuation = [',', '.', '!', '?', ';', ':'].includes(
                 word
