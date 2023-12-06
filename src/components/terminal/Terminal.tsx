@@ -58,26 +58,29 @@ export const Terminal: React.FC<TerminalProps> = ({
 
   const baseClasses = `${
     TerminalHidden ? 'hidden' : 'flex'
-  } w-11/12 absolute top-1/2 left-1/2 sm:h-[800px] h-[500px] transform -translate-x-1/2 -translate-y-1/2`;
-  console.log('initialDisplay: ', terminalTextObjects);
+  } w-11/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2`;
 
   return (
     <>
       <TerminalBtn hidden={TerminalHidden} setHidden={setTerminalHidden} />
       {/* <div className={`bg-black opacity-95 ${baseClasses}`} /> */}
-      <div className={`flex-col ${baseClasses} bg-[#000000ed] mt-8 `}>
-        <div className='p-5 typing-terminal flex-grow h-full  z-1 text-[#6dff41] xl:text-3xl font-mono overflow-y-auto whitespace-pre-wrap'>
+      <div
+        className={`flex-col ${baseClasses} bg-[#000000ed] mt-8 mb-4 h-[80vh] overflow-y-auto`}
+      >
+        <div className='p-5 typing-terminal text-[#6dff41] xl:text-3xl font-mono whitespace-pre-wrap flex-grow'>
           {terminalTextObjects.map((item, id) => (
             <TextItem key={id} item={item} />
           ))}
         </div>
-        <TerminalInput
-          isDisabled={false}
-          userInput={userInput}
-          setUserInput={setUserInput}
-          handleSubmit={handleSubmit}
-          usedCommands={usedCommands}
-        />
+        <div className='p-5'>
+          <TerminalInput
+            isDisabled={false}
+            userInput={userInput}
+            setUserInput={setUserInput}
+            handleSubmit={handleSubmit}
+            usedCommands={usedCommands}
+          />
+        </div>
       </div>
     </>
   );
