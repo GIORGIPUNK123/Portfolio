@@ -66,7 +66,7 @@ export const Terminal: React.FC<TerminalProps> = ({
       <TerminalBtn hidden={TerminalHidden} setHidden={setTerminalHidden} />
       {/* <div className={`bg-black opacity-95 ${baseClasses}`} /> */}
       <div className={`flex-col ${baseClasses} bg-[#000000ed] mt-8 `}>
-        <div className='p-5 typing-terminal flex-grow h-full  z-1 text-[#6dff41] text-3xl font-mono overflow-y-auto whitespace-pre-wrap'>
+        <div className='p-5 typing-terminal flex-grow h-full  z-1 text-[#6dff41] xl:text-3xl font-mono overflow-y-auto whitespace-pre-wrap'>
           {terminalTextObjects.map((item, id) => (
             <TextItem key={id} item={item} />
           ))}

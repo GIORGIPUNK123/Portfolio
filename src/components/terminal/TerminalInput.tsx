@@ -43,12 +43,15 @@ export const TerminalInput = (props: {
     <div className='flex items-center w-full bg-transparent z-1 pb-2'>
       <div className='text-[#6dff41] text-xl 2xl:text-3xl font-mono pr-3'>
         <span className='hidden 2xl:block'>{firstOutput}</span>
-        <span className='2xl:hidden'>
-          {startst}/Portfolio{pathname} $
-        </span>
+        <div className='2xl:hidden text-sm flex '>
+          <span className='mr-1'>{startst}</span>
+
+          <span className='hidden mr-1 md:block'>/Portfolio{pathname}</span>
+          <span> $</span>
+        </div>
       </div>
       <input
-        className='pr-4 placeholder-[#6dff41] flex-grow bg-transparent outline-none border-none text-[#6dff41] text-2xl 2xl:text-3xl font-mono'
+        className='pr-4 placeholder-[#6dff41] flex-grow bg-transparent outline-none border-none text-[#6dff41] text-md xl:text-2xl 2xl:text-3xl font-mono'
         value={userInput}
         type='text'
         disabled={isDisabled}

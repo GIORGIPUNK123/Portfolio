@@ -22,7 +22,7 @@ export const Header = () => {
           </ul>
         </div> */}
         <div className='flex items-center text-center'>
-          <h1 className='text-[#6dff41] text-4xl mt-3 font-mono typing-name'>
+          <h1 className='text-[#6dff41] text-2xl 2xl:text-4xl mt-3 font-mono typing-name'>
             CHARA
           </h1>
         </div>
