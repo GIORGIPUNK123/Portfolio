@@ -25,8 +25,9 @@ export const useTerminalOutput = () => {
       case 'projects':
         return `
 https://github.com/GIORGIPUNK123/Write|1. Write
-https://github.com/GIORGIPUNK123/Simple-Encoder|2. Simple Encoder
-https://github.com/GIORGIPUNK123/Calculator-App|3. Calculator`;
+https://github.com/GIORGIPUNK123/landing-page/tree/main|2. Landing Page
+https://github.com/GIORGIPUNK123/Simple-Encoder|3. Simple Encoder
+https://github.com/GIORGIPUNK123/Calculator-App|4. Calculator`;
       case 'contact':
         return `mailto: giorgirock@hotmail.com|Email
   https://github.com/GIORGIPUNK123/|Github
