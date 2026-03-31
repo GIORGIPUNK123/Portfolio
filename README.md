@@ -18,7 +18,7 @@
   <br>
   📫 How to reach me 👇
 </p>
-<p align="center"><a href="mailto:haleemborham3@gmail.com"><a href="https://www.youtube.com/channel/UCh8mOOAqWzzykQ4OLtDBYiQ"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" height=23></a></p>
+<p align="center"><a href="mailto:giorgirock@hotmail.com"><a href="https://www.youtube.com/channel/UCh8mOOAqWzzykQ4OLtDBYiQ"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" height=23></a></p>
 <hr>
 <h2 align="center">🔥 Languages & Frameworks & Tools & Abilities 🔥</h2><br>
 <p align="center">
@@ -55,6 +55,7 @@
 <h2 align="center">💹 Most Popular Repos 💹</h2>
 <br>
 <p align="center">
+
 <a href="https://github.com/GIORGIPUNK123/Math-Solve">
   <img width=300 align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=GIORGIPUNK123&repo=Math-Solve&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" />
 </a>   
