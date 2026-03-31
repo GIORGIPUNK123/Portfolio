@@ -5,7 +5,7 @@ import { useState } from 'react';
 export const Home = () => {
   const [terminalHidden, setTerminalHidden] = useState(true);
   return (
-    <div className='overflow-hidden relative w-screen h-screen'>
+    <div className='overflow-hidden relative w-screen h-screen bg-black'>
       <Video />
       <Introduction terminalHidden={terminalHidden} />
       <Terminal
