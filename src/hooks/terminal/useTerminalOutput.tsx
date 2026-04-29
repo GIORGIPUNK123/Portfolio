@@ -24,11 +24,12 @@ export const useTerminalOutput = () => {
         return 'JavaScript, Typescript, Problem Solving, React, Vue, Node.js, Electron, Git, MySql, HTML/CSS, Blender, Adobe Photoshop, Cinema4D ...';
       case 'projects':
         return `
-https://github.com/GIORGIPUNK123/Write|1. Write
-https://github.com/GIORGIPUNK123/landing-page/tree/main|2. Landing Page
-https://github.com/GIORGIPUNK123/my-cu-cli|3. CLI For Caucasus University Platform
-https://github.com/GIORGIPUNK123/Simple-Encoder|4. Simple Encoder
-https://github.com/GIORGIPUNK123/Calculator-App|5. Calculator`;
+https://english-pied-kappa.vercel.app|1. British World
+https://github.com/GIORGIPUNK123/Write|2. Write
+https://github.com/GIORGIPUNK123/landing-page/tree/main|3. Landing Page
+https://github.com/GIORGIPUNK123/my-cu-cli|4. CLI For Caucasus University Platform
+https://github.com/GIORGIPUNK123/Simple-Encoder|5. Simple Encoder
+https://github.com/GIORGIPUNK123/Calculator-App|6. Calculator`;
       case 'contact':
         return `mailto: giorgirock@hotmail.com|Email
   https://github.com/GIORGIPUNK123/|Github
